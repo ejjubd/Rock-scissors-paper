@@ -1,0 +1,135 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #24282c;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header-text{
+    display: flex;
+   text-align: center;
+    border:1px solid white;
+    padding:12px 34px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:1.9rem;
+    color:floralwhite;
+    animation: flicker 1.5s infinite alternate;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-text-line{
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.second-text-line{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px ;
+}
+
+.scoreboard{
+    display: flex;
+    gap: 20px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 80px;
+
+}
+.image1, .image2 {
+    height: 100px;
+    width: 100px;
+   
+    border: 1px solid white;
+
+}
+.image-holder1, .image-holder2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.buttons-container{
+    height: 35vh;
+    display: flex;
+    gap: 15px;
+    color: #f09;
+    align-items: flex-end;
+    justify-content: center;
+
+   
+}
+#popup{
+    background-color: #3c6792  ;
+    width: 40%;
+    padding: 70px 80px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2); 
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border: 1px solid white;
+    margin-top: 40px;
+    color: white;
+}
+
+
+
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px #f09,
+        0 0 73px #f09,
+        0 0 80px #f09,
+        0 0 94px #f09,
+        0 0 140px #f09;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
