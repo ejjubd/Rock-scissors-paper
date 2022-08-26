@@ -5,19 +5,29 @@
 }
 
 body{
-background-color: #24282c;
+background: linear-gradient(#02072e, #0a1379);
+font-family: "Courier New", Courier, monospace;
+background-repeat: no-repeat;
+width: 100vw;
+min-height: 100vh;
+}
+
+img{
+    height: 20vh;
+    width: 90%;
+    
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 10vh;
 }
 
 .header-text{
     display: flex;
-   text-align: center;
+    text-align: center;
     border:1px solid white;
     padding:12px 34px;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -34,79 +44,102 @@ background-color: #24282c;
 }
 .first-text-line{
     color: white;
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 25px;
+    margin-top:40px;
 }
 .second-text-line{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px ;
 }
 
-.scoreboard{
-    display: flex;
-    gap: 20px;
-}
+
 .images{
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-top: 80px;
+    margin-top: 50px;
 
 }
-.image1, .image2 {
-    height: 100px;
-    width: 100px;
-   
-    border: 1px solid white;
 
-}
+
 .image-holder1, .image-holder2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    color: white;
+    color: snow;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .buttons-container{
-    height: 35vh;
+    margin-top: 90px;
     display: flex;
-    gap: 15px;
-    color: #f09;
+    gap: 60px;
     align-items: flex-end;
     justify-content: center;
-
+}
+button{
+   background-color: #4f77a7cc;
+   transition: ease .3s;
+   outline: none;
    
 }
+
+
+button:hover{
+    background-color: #011024;
+    transform: scale(1.1);
+}
 #popup{
-    background-color: #3c6792  ;
-    width: 40%;
-    padding: 70px 80px;
+    background-color: #021225 ;
+    opacity: 0.98;
+    padding: 60px 140px ;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
-    border-radius: 8px;
+    border-radius: 12px;
     font-family: "Poppins",sans-serif;
-    display: none;
+    display:none;
     text-align: center;
-    box-shadow: 5px 5px 30px rgba(0,0,0,.2); 
+    box-shadow: 5px 5px 70px   rgb(167, 20, 130); 
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+   
 }
 
-
-
-
-
-.footer{
+.popup-items {
     display: flex;
+    flex-direction: column;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    height: 5vh;
-    border: 1px solid white;
-    margin-top: 40px;
-    color: white;
 }
+
+
+#play-again {
+    background-color: #0f0661;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-family: "Courier New", Courier, monospace;
+    
+}
+#play-again:hover{
+    background-color:#3d0f33 ;
+    
+
+}
+    
+.footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}  
 
 
 
@@ -133,3 +166,21 @@ background-color: #24282c;
     }    
   }
 
+
+@media screen and (max-width:1024px){
+
+}
+
+@media screen and (max-width:991px){
+
+}
+
+
+
+@media screen and (max-width:768px){
+}
+@media screen and (max-width:578px){
+}
+
+@media screen and (max-width:447px){
+}
