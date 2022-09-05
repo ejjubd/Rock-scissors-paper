@@ -23,13 +23,13 @@ rock.addEventListener ('click', function() {
    let playerSelection = 'ROCK';
    if (playerSelection === computerSelection) {
      write ("It'a tie", "Rock ties with rock" )
-     changeImage("/images/rockkk3.jpg", "images/rockkk3.jpg")
+     changeImage("./images/rockkk3.jpg", "./images/rockkk3.jpg")
      }
    
    if (
     playerSelection === 'ROCK' && computerSelection === 'SCISSORS') { 
       write ("You won ", "Rock is beaten by scissors" )
-      changeImage("/images/rockkk3.jpg", "images/scissors.png")
+      changeImage("./images/rockkk3.jpg", "./images/scissors.png")
       playerScore++
      if (checkScore (playerScore)) {
          console.log('Player is winner')
@@ -39,7 +39,7 @@ rock.addEventListener ('click', function() {
    if (
     playerSelection === 'ROCK' && computerSelection === 'PAPER') { 
          write ("You lost ", "Paper is beaten by rock")
-        changeImage("/images/rockkk3.jpg", "images/paper.png")
+        changeImage("./images/rockkk3.jpg", "./images/paper.png")
          computerScore++
         if (checkScore (computerScore)) {
             console.log('Computer is winner')
@@ -57,12 +57,12 @@ rock.addEventListener ('click', function() {
     let playerSelection = 'SCISSORS'
     if (playerSelection === computerSelection) {
        write(" It's a tie", "Scissors ties with scissors")
-       changeImage("/images/scissors.png","/images/scissors.png" )
+       changeImage("./images/scissors.png","./images/scissors.png" )
        }
     if (
      playerSelection === 'SCISSORS' && computerSelection === 'ROCK') { 
         write("You lost ","Scissors are beaten by rock" )
-        changeImage("/images/scissors.png", "images/rockkk3.jpg" )
+        changeImage("./images/scissors.png", "./images/rockkk3.jpg" )
        
         computerScore++
         if (checkScore (computerScore)) {
@@ -74,7 +74,7 @@ rock.addEventListener ('click', function() {
     if (
      playerSelection === 'SCISSORS' && computerSelection === 'PAPER') { 
         write ("You won ", "Paper is beaten by scissors")
-        changeImage("/images/scissors.png", "/images/paper.png")
+        changeImage("./images/scissors.png", "./images/paper.png")
         
         playerScore++
         if (checkScore (playerScore)) {
@@ -90,13 +90,13 @@ rock.addEventListener ('click', function() {
       let playerSelection = 'PAPER'
       if (playerSelection === computerSelection) {
        write ("It's a tie","Paper ties with paper" )
-       changeImage("/images/paper.png", "/images/paper.png")
+       changeImage("./images/paper.png", "./images/paper.png")
        
       }
       if (
        playerSelection === 'PAPER' && computerSelection === 'ROCK') { 
         write ("You won", "Rock is beaten by paper" )
-        changeImage("/images/paper.png", "/images/rockkk3.jpg")
+        changeImage("./images/paper.png", "./images/rockkk3.jpg")
         playerScore++
         if (checkScore (playerScore)) {
             console.log('Player is winner')
@@ -106,7 +106,7 @@ rock.addEventListener ('click', function() {
       if (
        playerSelection === 'PAPER' && computerSelection === 'SCISSORS') { 
       write("You lost ","Paper is beaten by scissors"   )
-      changeImage("/images/paper.png", "/images/scissors.png")
+      changeImage("./images/paper.png", "./images/scissors.png")
       computerScore++
         if (checkScore (computerScore)) {
             console.log('Computer is winner')
@@ -149,7 +149,7 @@ function resetScore () {
     document.getElementById('player-score').innerHTML = `Player Score: ${playerScore}`
     document.getElementById('popup').style.display = 'none';
     write("Choose your weapon", "First to score 5 points wins the game")
-    changeImage("/images/Question.png", "/images/Question.png" );
+    changeImage("./images/Question.png", "./images/Question.png" );
     })
 }
 

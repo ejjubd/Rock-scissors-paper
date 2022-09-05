@@ -5,10 +5,9 @@
 }
 
 body{
-background: linear-gradient(#02072e, #0a1379);
+background: linear-gradient(#02072e, #1e3a8a);
 font-family: "Courier New", Courier, monospace;
 background-repeat: no-repeat;
-width: 100vw;
 min-height: 100vh;
 }
 
@@ -91,6 +90,7 @@ button{
 button:hover{
     background-color: #011024;
     transform: scale(1.1);
+    cursor: pointer;
 }
 #popup{
     background-color: #021225 ;
