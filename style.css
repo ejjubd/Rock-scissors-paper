@@ -5,7 +5,7 @@
 }
 
 body{
-background: linear-gradient(#02072e, #1e3a8a);
+background:black;
 font-family: "Courier New", Courier, monospace;
 background-repeat: no-repeat;
 min-height: 100vh;
@@ -21,18 +21,20 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 .header-text{
     display: flex;
     text-align: center;
-    border:1px solid white;
+    border:1px solid rgb(156, 58, 12);
     padding:12px 34px;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size:1.9rem;
-    color:floralwhite;
+    font-size:50px;
+    color:rgb(209, 105, 19);
     animation: flicker 1.5s infinite alternate;
+    box-shadow: 0 0 8px  rgb(240, 115, 66); 
+    font-weight: bolder;
 }
 
 .main-container {
@@ -70,6 +72,7 @@ img{
     color: snow;
     font-size: 15px;
     font-weight: bold;
+     width: 160px;
 }
 
 .buttons-container{
@@ -80,7 +83,7 @@ img{
     justify-content: center;
 }
 button{
-   background-color: #4f77a7cc;
+   background-color: #262729cc;
    transition: ease .3s;
    outline: none;
    
@@ -88,12 +91,12 @@ button{
 
 
 button:hover{
-    background-color: #011024;
+    background-color: #ee9883;
     transform: scale(1.1);
     cursor: pointer;
 }
 #popup{
-    background-color: #021225 ;
+    background-color: #01080f ;
     opacity: 0.98;
     padding: 60px 140px ;
     position: absolute;
@@ -104,7 +107,7 @@ button:hover{
     font-family: "Poppins",sans-serif;
     display:none;
     text-align: center;
-    box-shadow: 5px 5px 70px   rgb(167, 20, 130); 
+    box-shadow: 0 0 20px  rgb(240, 115, 66); 
     color: white;
     font-family: "Courier New", Courier, monospace;
    
@@ -120,7 +123,7 @@ button:hover{
 
 
 #play-again {
-    background-color: #0f0661;
+    background-color: #bd0b0b;
     border: none;
     color: white;
     padding: 8px 25px;
@@ -129,7 +132,7 @@ button:hover{
     
 }
 #play-again:hover{
-    background-color:#3d0f33 ;
+    background-color:#d41313 ;
     
 
 }
@@ -145,26 +148,6 @@ button:hover{
 
 
 
-@keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff,
-        0 0 38px #f09,
-        0 0 73px #f09,
-        0 0 80px #f09,
-        0 0 94px #f09,
-        0 0 140px #f09;
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
-  }
 
 
 @media screen and (max-width:1024px){
